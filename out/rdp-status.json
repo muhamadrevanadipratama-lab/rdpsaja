@@ -1,58 +1,58 @@
 {
   "active": true,
-  "hostname": "rdpfree-1",
+  "hostname": "rdpfree-3",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
   "os_style": "Native Windows",
   "hardware": {
-    "cpu_threads": 4,
     "ram_gb": 16.0,
+    "cpu_threads": 4,
     "disk_free_gb": 80.5
   },
   "rdp_port": 3389,
   "rdp_user": "vann",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-11-14T17:34:34Z",
-  "expires_at": "2026-11-14T23:16:34Z",
+  "started_at": "2026-11-14T21:57:02Z",
+  "expires_at": "2026-11-15T03:39:02Z",
   "duration_menit": 342,
-  "run_id": "43621805079",
+  "run_id": "43645442175",
   "run_attempt": "1",
-  "run_number": "1",
-  "run_url": "https://github.com/muhamadrevanadipratama-lab/rdpsaja/actions/runs/43621805079",
+  "run_number": "3",
+  "run_url": "https://github.com/muhamadrevanadipratama-lab/rdpsaja/actions/runs/43645442175",
   "mode": "bersih+win10",
   "runtimes": {
-    "vc2022x86": "sudah ada",
-    "vc2022x64": "sudah ada",
-    "vc2005x64": "dilewati (mode cepat)",
     "vc2008x64": "dilewati (mode cepat)",
+    "net35": "dilewati (mode cepat)",
+    "vc2005x64": "dilewati (mode cepat)",
+    "vc2022x86": "sudah ada",
     "directx9": "ok",
-    "net35": "dilewati (mode cepat)"
+    "vc2022x64": "sudah ada"
   },
   "storage": {
     "status": "ok",
     "mode": "boost-ringan",
     "before_gb": 80.05,
-    "after_gb": 117.37,
-    "gained_gb": 37.32,
+    "after_gb": 117.35,
+    "gained_gb": 37.3,
     "removed_targets": 32,
     "drives": [
       {
-        "free_gb": 117.37,
+        "free_gb": 117.35,
+        "letter": "C",
         "size_gb": 255.45,
-        "used_gb": 138.08,
-        "letter": "C"
+        "used_gb": 138.1
       },
       {
-        "free_gb": 146.98,
+        "free_gb": 146.99,
+        "letter": "D",
         "size_gb": 150.0,
-        "used_gb": 3.01,
-        "letter": "D"
+        "used_gb": 3.01
       }
     ],
     "game_dir": "D:\\Games (disarankan untuk GTA)",
     "note": "Cleanup selesai. gained_gb adalah perubahan ruang aktual, bukan kapasitas yang dijanjikan. Target terkunci bisa tersisa.",
-    "updated_at": "2026-11-14T17:42:40.5559051Z"
+    "updated_at": "2026-11-14T22:04:33.4367711Z"
   },
   "fps_boost": {
     "status": "ok",
@@ -70,7 +70,7 @@
     "applied_count": 8,
     "elapsed_sec": 1.5,
     "note": "Tweak rendering RDP & scheduler OS. Tidak menaikkan FPS game 3D tanpa GPU fisik; Mesa3D/WARP tetap dipakai.",
-    "updated_at": "2026-11-14T17:42:42.4898876Z"
+    "updated_at": "2026-11-14T22:04:35.3428201Z"
   },
   "win10": {
     "look": "ok",
@@ -81,18 +81,18 @@
     "note": "Tampilan Windows 10 (UI Windows Server 2022 = kernel/UI Windows 10 21H2)"
   },
   "media": {
-    "wallpaper": "xyverse_configured_for_user_logon",
-    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
+    "audio_output": "rdp_playback_enabled",
     "microphone": "rdp_capture_enabled",
-    "audio_output": "rdp_playback_enabled"
+    "wallpaper": "xyverse_configured_for_user_logon",
+    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end."
   },
   "grafis": {
-    "mesa": "26.2.6",
     "adapters": "Microsoft Hyper-V Video",
-    "mode": "software",
     "path": "C:\\XyRDP\\grafis\\mesa-x64",
-    "opengl": "4.6 (Mesa llvmpipe system-wide x64/x86 + OpenGL ES 3.2)",
-    "vulkan": "lavapipe 1.3 (CPU)"
+    "vulkan": "lavapipe 1.3 (CPU)",
+    "mesa": "26.2.6",
+    "mode": "software",
+    "opengl": "4.6 (Mesa llvmpipe system-wide x64/x86 + OpenGL ES 3.2)"
   },
   "native_core": {
     "csharp_mac_launcher": "ok",
@@ -136,19 +136,19 @@
   "akses": {
     "mode": "tailscale",
     "tailscale": {
+      "ip": "100.123.37.31",
+      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
       "hostname": "rdpfree",
       "status": "ok",
-      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "ip": "100.127.217.74",
-      "magicdns": "rdpfree.tail972ad8.ts.net."
+      "magicdns": "rdpfree-2.tail972ad8.ts.net."
     },
     "tunnel": {
-      "address": "100.127.217.74:3389",
+      "address": "100.123.37.31:3389",
       "selftest": "ok",
+      "status": "ok",
+      "host": "100.123.37.31",
       "port": 3389,
-      "host": "100.127.217.74",
-      "outside": "tailscale",
-      "status": "ok"
+      "outside": "tailscale"
     }
   }
 }
